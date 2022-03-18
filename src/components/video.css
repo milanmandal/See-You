@@ -1,0 +1,60 @@
+.room{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top
+{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:95%;
+    width: 80%;
+    border-radius: 10px;
+}
+video{
+    height:45%;
+    width: 40%;
+    margin:20px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(183, 188, 194);
+    border-radius: 10px;
+}
+.bottom
+{
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-top{
+    margin: 10px;
+    width: 30%;
+    margin-left: 10%;
+}
+.button-down{
+    margin: 10px;
+    width: 30%;
+}
+
+@media only screen and (max-width: 760px) {
+    .top-wrapper{
+        width: 100%;
+    }
+    video{
+        height: 20%;
+        width:40%;
+        margin:3px;
+        border-radius: 10px;
+    }
+}
