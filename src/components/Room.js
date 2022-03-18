@@ -16,7 +16,7 @@ const Room = (props) => {
 
     const roomID = props.match.params.roomID;
     useEffect(() => {
-        socketRef.current = io.connect("http://localhost:8000/"); //connection to server at port 8000;
+        socketRef.current = io.connect("https://see-you-webrtc.herokuapp.com/"); //connection to server at port 8000;
 
         //Permission to use camera and microphone
         navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(stream => {
