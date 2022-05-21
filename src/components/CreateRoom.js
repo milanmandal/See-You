@@ -16,8 +16,8 @@ const CreateRoom = (props) => {
 
     const Joinroom = async()=>{  
         console.log("here");
-        // socketRef.current = await io.connect("https://see-you-webrtc.herokuapp.com/"); //connection to server at heroku;
-        socketRef.current = io.connect("/"); //connection to server at port 8000;
+        socketRef.current = await io.connect("https://see-you-webrtc.herokuapp.com/"); //connection to server at heroku;
+        // socketRef.current = io.connect("/"); //connection to server at port 8000;
         socketRef.current.emit("join", roomID)
         socketRef.current.on("room full", flag => {
             if(flag)
