@@ -22,6 +22,7 @@ io.on('connection', socket => {
             socket.emit("room full",people);
         }
     })
+
     socket.on("join room", roomID => {
         if (users[roomID]) {
             users[roomID].push(socket.id);
