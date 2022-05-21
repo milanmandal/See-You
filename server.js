@@ -5,6 +5,9 @@ const app = express();
 const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
+const cors = require("cors");
+
+app.use(cors());
 
 const users = {};
 const socketToRoom = {};
